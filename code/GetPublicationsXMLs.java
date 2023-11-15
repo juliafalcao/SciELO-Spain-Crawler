@@ -37,7 +37,7 @@ public class GetPublicationsXMLs {
 	
 	private List<String> newRecords;
 	
-	static final String xmlURL = "http://scielo.isciii.es/scieloOrg/php/articleXML.php?pid=";
+	static final String xmlURL = "https://scielo.isciii.es/scieloOrg/php/articleXML.php?pid="; // originally http
 	
 	private int numRecords;
 	

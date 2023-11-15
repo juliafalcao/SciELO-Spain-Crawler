@@ -23,7 +23,7 @@ import org.xml.sax.SAXParseException;
 
 public class GetAllSets {
 
-	static final String SCIELOoaiURL = "http://scielo.isciii.es/oai/scielo-oai.php";
+	static final String SCIELOoaiURL = "https://scielo.isciii.es/oai/scielo-oai.php"; // originally http
 	static final String SCIELOsetsFile = "/tmp/scielo-sets.xml";
 	
 	private List<String> sets;

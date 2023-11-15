@@ -32,7 +32,7 @@ import org.xml.sax.SAXException;
 
 public class GetRecordsFromSets {
 	
-	static final String SCIELOoaiURL = "http://scielo.isciii.es/oai/scielo-oai.php";
+	static final String SCIELOoaiURL = "https://scielo.isciii.es/oai/scielo-oai.php"; // originally http
 	static final String setsFile = "/tmp/scielo-sets.txt";
 	
 	private String corpusDirectory;
