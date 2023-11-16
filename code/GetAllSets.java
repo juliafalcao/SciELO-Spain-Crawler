@@ -10,6 +10,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.nio.charset.StandardCharsets;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -43,7 +44,7 @@ public class GetAllSets {
 		String listSetsURL = new String(SCIELOoaiURL + "?verb=ListSets");
 		
 		URL scielo = new URL(listSetsURL);
-        BufferedReader in = new BufferedReader(new InputStreamReader(scielo.openStream()));
+        BufferedReader in = new BufferedReader(new InputStreamReader(scielo.openStream(), StandardCharsets.ISO_8859_1));
 
         BufferedWriter writer = new BufferedWriter(new FileWriter(SCIELOsetsFile));
         String inputLine;

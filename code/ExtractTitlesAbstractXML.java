@@ -253,7 +253,7 @@ public class ExtractTitlesAbstractXML {
 		Transformer transformer = transformerFactory.newTransformer();
 		DOMSource source = new DOMSource(newDC);
 		StreamResult result = new StreamResult(new File(fileName));
-		transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
+		transformer.setOutputProperty(OutputKeys.ENCODING, "ISO-8859-1");
 		transformer.setOutputProperty(OutputKeys.INDENT, "yes");
 		transformer.transform(source, result);
 	}

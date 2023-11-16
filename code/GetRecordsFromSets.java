@@ -13,6 +13,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.nio.charset.StandardCharsets;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -160,7 +161,7 @@ public class GetRecordsFromSets {
 		
 		URL scieloSet = new URL(URLdir);
 //		System.err.println(scieloSet.toString());
-        BufferedReader in = new BufferedReader(new InputStreamReader(scieloSet.openStream()));
+        BufferedReader in = new BufferedReader(new InputStreamReader(scieloSet.openStream(), StandardCharsets.ISO_8859_1));
 
         BufferedWriter writer = new BufferedWriter(new FileWriter("/tmp/set_" + set + ".xml"));
         String inputLine;
