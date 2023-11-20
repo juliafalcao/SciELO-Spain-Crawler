@@ -168,7 +168,10 @@ public class GetPublicationsXMLs {
 		}
 		
 		// example: wget http://scielo.isciii.es/scieloOrg/php/articleXML.php?pid=S1130-01082004001000010 -O /home/aintxaur/Scielo-Corpus/scielo-isciii/records/1130-0108/S1130-01082004001000010.xml
+
+
 		String wget = "wget -U \"Opera 11.0\" " + xmlURL + recordID + " -O " + XMLdir + File.separator + setID + File.separator + recordID + ".xml";
+		System.out.println("WGET: " + wget);
 		
 		Process p;
 		try
